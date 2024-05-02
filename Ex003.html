@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003</title>
+    <style>
+        body  {
+
+            background-color: rgb(255, 0, 76);
+            font: normal 25px Arial;
+            color: yellow;
+        }
+
+        h1 {
+ 
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exercise 003 - JavaScript
+    </h1>
+    <p>
+        Ask two values and sum.
+    </p>
+    <script>
+        /*To convert a string to number we can use Number(x) function
+        To specify Int or Float we can use Number.parseInt(x) or
+        Number.parseFloat(x)*/
+        /*To convert a number to string we can use String(x) function
+        or x.toString*/
+        var num1 = Number.parseInt(window.prompt("What is the first value? "))
+        var num2 = Number.parseInt(window.prompt("What is the second value? "))
+        var sum = num1 + num2
+        window.alert(`${num1}+${num2} = ${sum}`)
+        /*Text formatting techniques in JavaScript uses `text ${var}`
+        it's called "template string"*/
+    </script>
+    </body>
+</html>
