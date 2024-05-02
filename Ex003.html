@@ -34,9 +34,10 @@
         var num1 = Number.parseInt(window.prompt("What is the first value? "))
         var num2 = Number.parseInt(window.prompt("What is the second value? "))
         var sum = num1 + num2
-        window.alert(`${num1}+${num2} = ${sum}`)
+        window.alert(`${num1}+${num2} = ${sum.toFixed(2)}`)
         /*Text formatting techniques in JavaScript uses `text ${var}`
         it's called "template string"*/
+        /*To formate with x decimal places we use y.toFixed(x)*/
     </script>
     </body>
 </html>
