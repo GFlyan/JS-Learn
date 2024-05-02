@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex006</title>
+    <style>
+        body  {
+
+            background-color: rgb(255, 0, 76);
+            font: normal 25px Arial;
+            color: yellow;
+        }
+
+        h1 {
+
+            color: black;
+        
+        }
+        
+        div#block{
+        
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exercise 006 - JavaScript
+    </h1>
+    <p>
+        Using <strong>DOM</strong> and <strong> FUNCTIONS</strong> with JavaScript!
+    </p>
+    <div id="block">
+        DISCOVER...
+    </div>
+    <script>
+
+        /*
+        Functions in JavaScript can be defined by: 
+        function x() {
+
+            content
+
+        }
+        
+        DOM events are interactions with the content, there are a lot of DOM events.
+        */
+        var interaction = window.document.getElementById('block')
+        interaction.addEventListener('click', toClick)
+        interaction.addEventListener('mouseenter', inside)
+        interaction.addEventListener('mouseout', outside)
+
+
+        function toClick() {
+
+            interaction.innerText = "CLICK!"
+            interaction.style.background = 'yellow'
+            interaction.style.color = 'black'
+        }
+
+        function inside() {
+
+            interaction.innerText = 'INSIDE!'
+            interaction.style.background = 'white'
+            interaction.style.color = 'black'
+
+        }
+
+        function outside() {
+
+            interaction.innerText = 'OUTSIDE...'
+            interaction.style.background = 'black'
+            interaction.style.color = 'white'
+
+        }
+    </script>
+    </body>
+</html>
+</html>
