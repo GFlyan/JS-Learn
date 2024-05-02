@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex005</title>
+    <style>
+        body  {
+
+            background-color: rgb(255, 0, 76);
+            font: normal 25px Arial;
+            color: yellow;
+        }
+
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exercise 005 - JavaScript
+    </h1>
+    <p>
+        Learning <strong>DOM</strong> with JavaScript!
+    </p>
+    <p>
+        <strong>D</strong> -> Document<br>
+        <strong>O</strong> -> Object<br>
+        <strong>M</strong> -> Model<br>
+    </p>
+    <script>
+
+        /*
+        DOM is used to select objects
+        To get informations from things using DOM trees with JavaScript:
+        Tag: <DOM>.getElementsByTagName(arg)[pos]
+        ID: <DOM>.getElementsById(arg)[pos]
+        Name: <DOM>.getElementsByName(arg)[pos]
+        Class: <DOM>.getElementsByClassName(arg)[pos]
+        Selector: <DOM>.querySelector(arg(#id or .class)x)
+        */
+        let paragraph = window.document.getElementsByTagName('p')[1]
+        paragraph.style.color = 'white'
+    </script>
+    </body>
+</html>
+</html>
